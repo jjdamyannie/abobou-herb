@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="zh-TW">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>阿缽坊 abobou herb house</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      :root {
+        --bg-brown: #5c1e18;
+        --text-light: #f5efe6;
+        --text-sub: #d8c3a5;
+        --nav-bg: rgba(131, 72, 72, 0.4);
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Noto Sans TC", sans-serif;
+        background-color: var(--bg-brown);
+        color: var(--text-light);
+        line-height: 1.8;
+        letter-spacing: 1px;
+      }
+
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
+
+      .navbar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 70px;
+        background: var(--nav-bg);
+        backdrop-filter: blur(5px);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 10%;
+        z-index: 1000;
+      }
+
+      .nav-links {
+        display: flex;
+        gap: 30px;
+        list-style: none;
+        font-size: 0.95rem;
+      }
+
+      .nav-links a:hover {
+        color: var(--text-sub);
+      }
+
+      .nav-logo-img {
+        height: 35px;
+        width: auto;
+      }
+
+      .hero-section {
+        width: 100%;
+        height: 80vh;
+        min-height: 500px;
+        background: url("阿缽坊主視覺.png") center/cover no-repeat;
+      }
+
+      .story-section {
+        padding: 80px 20px 120px;
+        max-width: 800px;
+        margin: 0 auto;
+        text-align: center;
+      }
+
+      .card-container {
+        margin: 0 auto 50px;
+        width: 280px;
+        height: 280px;
+        background: url("阿缽坊牛皮紙.png") center/cover no-repeat;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+        border-radius: 4px;
+      }
+
+      .story-header {
+        margin-bottom: 40px;
+      }
+
+      .story-header h3 {
+        font-size: 1.1rem;
+        font-weight: 400;
+        margin-bottom: 8px;
+      }
+
+      .story-header p {
+        font-size: 0.95rem;
+        color: var(--text-sub);
+      }
+
+      .story-body {
+        font-size: 0.95rem;
+        font-weight: 300;
+        line-height: 2;
+        display: flex;
+        flex-direction: column;
+        gap: 28px;
+      }
+
+      .story-highlight {
+        font-weight: 400;
+        color: #ffffff;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar">
+      <ul class="nav-links">
+        <li><a href="#products">商品分類</a></li>
+        <li><a href="#column">漢方養生專欄</a></li>
+      </ul>
+
+      <div class="nav-logo">
+        <img src="阿缽坊 logo.png" alt="阿缽坊 Logo" class="nav-logo-img" />
+      </div>
+
+      <ul class="nav-links">
+        <li><a href="#story">品牌故事</a></li>
+        <li><a href="#contact">聯絡我們</a></li>
+      </ul>
+    </nav>
+
+    <header class="hero-section"></header>
+
+    <main class="story-section">
+      <div class="card-container"></div>
+
+      <div class="story-header">
+        <h3>阿缽坊 abobou herb house</h3>
+        <p>一甲子的漢方鋪 老中藥房裡的藥櫃，記錄著幾代人的歲月</p>
+      </div>
+
+      <div class="story-body">
+        <p>
+          斑駁歷史感的藥櫃，是我們幾代人歲月的縮影。<br />
+          小時候制服上總帶著洗不掉的中藥香，那是天天曬藥、搗藥、炒藥留下的印記…
+        </p>
+
+        <p>
+          隨著時代演變，中藥房漸漸沒落，但我們想延續傳統好味道與質樸天然藥膳的心情沒變過…<br />
+          身為中醫師的兒子，我們將這份伴隨長大的記憶走向網路，由專業中醫師父子親自研發監製，<br />
+          只賣自家敢吃、也經常給家人補身體的藥膳。
+        </p>
+
+        <p class="story-highlight">
+          我們不只是老字號中藥房的繼承者，更是擁有實體診所、由執業中醫師親自把關的漢方品牌！
+        </p>
+      </div>
+    </main>
+  </body>
+</html>
